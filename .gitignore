@@ -1,0 +1,5 @@
+__pycache__
+.pynb_checkpoints
+venv
+virtualenv
+*.pyc
