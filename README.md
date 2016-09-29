@@ -4,17 +4,6 @@
 
 Following my principles of Open Access and Open Notebook Science I'd like to present you my comparative analysis of NeuroOn and a professional polisomnograph recording from two nights. To learn more about the experiment itself, please head back to my [previous blog post](https://alxd.org/neuroon-analysis-sources.html).
 
-## Notebook setup
-
-It is strongly advised to use `virtualenv` for freezing specific version of Python libraries. Please use `pip 8.12` . Instructions:
-
- - Create `virtualenv` ([what is it?](http://docs.python-guide.org/en/latest/dev/virtualenvs/)) in core project folder and activate it.
- - Run `pip install -r requirements.txt` to install all dependencies. It may be required to update your package installer with `pip install --upgrade pip`.
- - Download [hdf files](https://alxd.org/data/neuroon-signals-hdf.7z) and unzip them to populate the `parsed_data` catalog.
- - Download [raw signal files](https://alxd.org/data/neuroon-signals-raw.7z) and unzip them to populate the `neuroon_signals` catalog.
- - Run `jupyter notebook` to start the notebook.
-
-
 ## Signal formats
 
 Raw signals are available for download [here](https://alxd.org/data/neuroon-signals-raw.7z), with md5sum `f5c4330e1228f8a3f0bd11bffbfa55ad`.
@@ -55,7 +44,7 @@ PSG signals from both nights were scored by a professional and exported to XLS a
 
 ## Analysis
 
-This is just a peer-review version of the analysis with no clear conclusions or discussion section. Please refrain yourself from making hasty assumptions related to NeuroOn product before it is read and commented by third party researchers.
+This is a peer-review version of the analysis (currently) with no clear conclusions or discussion section. Please refrain yourself from making hasty assumptions related to NeuroOn product before it is read and commented by third party researchers. We would like to discuss the science behind the research, not the market viability of the device examined.
 
 The goal of the experiment is to detect time shift between NeuroOn and Aura PSG, each of which use different clock and compare synchronized hypnograms. In order to test NeuroOn's accuracy it is assumed that PSG signal is a source of truth.
 
@@ -67,7 +56,17 @@ The goal of the experiment is to detect time shift between NeuroOn and Aura PSG,
 
 [Spectral_analysis](Spectral analysis.ipynb) compares PSG's and NeuroOn's ability to use delta power to determine sleep stages.
 
-The analysis doesn't include research in NeuroOn's use of accelerometer, focusing on EEG stage detection only.
+The analysis doesn't include research in NeuroOn's use of accelerometer, focusing on EEG stage detection only. Continuing in this direction (especially given additional signal gathered from the bicep) may grant additional insight into NeuroOn's functioning.
+
+## Notebook setup
+
+It is strongly advised to use `virtualenv` for freezing specific version of Python libraries. Please use `pip 8.12` . Instructions:
+
+ - Create `virtualenv` ([what is it?](http://docs.python-guide.org/en/latest/dev/virtualenvs/)) in core project folder and activate it.
+ - Run `pip install -r requirements.txt` to install all dependencies. It may be required to update your package installer with `pip install --upgrade pip`.
+ - Download [hdf files](https://alxd.org/data/neuroon-signals-hdf.7z) and unzip them to populate the `parsed_data` catalog.
+ - Download [raw signal files](https://alxd.org/data/neuroon-signals-raw.7z) and unzip them to populate the `neuroon_signals` catalog.
+ - Run `jupyter notebook` to start the notebook.
 
 ## All feedback welcome
 
