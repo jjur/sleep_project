@@ -4,8 +4,6 @@
 
 Following my principles of Open Access and Open Notebook Science I'd like to present you my comparative analysis of NeuroOn and a professional polisomnograph recording from two nights. To learn more about the experiment itself, please head back to my [previous blog post](https://alxd.org/neuroon-analysis-sources.html).
 
-*[more on NeuroOn and AURA PSG, make assumption that Aura is the closest thing to what is actually happening in the brain]*
-
 ## Notebook setup
 
 It is strongly advised to use `virtualenv` for freezing specific version of Python libraries. Please use `pip 8.12` . Instructions:
