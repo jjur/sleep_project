@@ -13,7 +13,7 @@ It is strongly advised to use `virtualenv` for freezing specific version of Pyth
  - Create `virtualenv` ([what is it?](http://docs.python-guide.org/en/latest/dev/virtualenvs/)) in core project folder and activate it.
  - Run `pip install -r requirements.txt` to install all dependencies. It may be required to update your package installer with `pip install --upgrade pip`.
  - Download [hdf files](https://alxd.org/data/neuroon-signals-hdf.7z) and unzip them to populate the `parsed_data` catalog.
- - Download [raw signal files](https://alxd.org/data/neuroon-signals-raw.zip) and unzip them to populate the `neuroon_signals` catalog.
+ - Download [raw signal files](https://alxd.org/data/neuroon-signals-raw.7z) and unzip them to populate the `neuroon_signals` catalog.
  - Run `jupyter notebook` to start the notebook.
 
 
@@ -61,13 +61,13 @@ This is just a peer-review version of the analysis with no clear conclusions or 
 
 The goal of the experiment is to detect time shift between NeuroOn and Aura PSG, each of which use different clock and compare synchronized hypnograms. In order to test NeuroOn's accuracy it is assumed that PSG signal is a source of truth.
 
-`Time_synchronization` is the first notebook analyzing time shifts between NeuroOn and PSG signals and hypnograms.
+[Time_synchronization](./Time_synchronization.ipynb) is the first notebook analyzing time shifts between NeuroOn and PSG signals and hypnograms.
 
-`Hipnogram_comparison` uses Cohen's cappa to measure NeuroOn's accuracy compared to the PSG.
+[Hipnogram_comparison](./Hipnogram_comparison.ipynb) uses Cohen's cappa to measure NeuroOn's accuracy compared to the PSG.
 
-`Correlation_test` analyzes different possible methods of correlation between EEG signals, including (previous one)[https://github.com/pawelchojnacki/neuroon-notebook] used by Pawel Chojnacki.
+[Correlation_test](./Correlation test.ipynb) analyzes different possible methods of correlation between EEG signals, including [previous one](https://github.com/pawelchojnacki/neuroon-notebook) used by Pawel Chojnacki.
 
-`Spectral_analysis` compares PSG's and NeuroOn's ability to use delta power to determine sleep stages.
+[Spectral_analysis](Spectral analysis.ipynb) compares PSG's and NeuroOn's ability to use delta power to determine sleep stages.
 
 The analysis doesn't include research in NeuroOn's use of accelerometer, focusing on EEG stage detection only.
 
