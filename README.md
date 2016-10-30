@@ -40,7 +40,7 @@ AURA PSG signal was exported to an EDF format using Grass Technologies PSG TWin 
  - LEG2 (first night only)
  - Pos (first night only)
 
-PSG signals from both nights were scored by a professional and exported to XLS and CSV files.
+All EEG channels were sampled with 200 Hz frequency. PSG signals from both nights were scored by a professional and exported to XLS and CSV files.
 
 ## Analysis
 
