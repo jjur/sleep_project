@@ -71,3 +71,7 @@ It is strongly advised to use `virtualenv` for freezing specific version of Pyth
 ## All feedback welcome
 
 Feel free to [contact me](mailto:alxd(AT)alxd(DOT)org), fork and share this repository!
+
+## License
+
+All the code and signal samples are provided under MIT license (see [LICENSE.md](./LICENSE.md)). Other resources, such as blogposts and scientific posters may have different licenses, such as viral CC-BY-SA. 
